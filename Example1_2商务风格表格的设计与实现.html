@@ -1,0 +1,43 @@
+﻿<html>
+    <head>
+        <meta charset="utf-8">
+        <title>商务风格表格的设计与实现</title>
+        <style>
+		    /*设置表格总体样式*/
+            #recruit {
+                width: 100%;
+                border-collapse: collapse;
+                text-align: left;
+            }
+			/*设置单元格样式*/
+            #recruit td, #recruit th {
+               /* font-size: 1em;*/
+                border: 1px solid orange;
+                padding: 7px;
+            }
+            /*设置标题单元格样式*/
+			#recruit th {
+                background-color: orange;
+                color: #ffffff;
+            }
+			/*设置单元行样式*/
+            #recruit tr.orange{
+                background-color: #FFEDDB
+            }		
+        </style>
+    </head>
+    <body>
+        <h3>商务风格表格的设计与实现</h3>
+        <hr />
+        <table id="recruit" border="1">
+            <caption>招聘信息表</caption>
+            <tr><th>地点</th><th>招聘职位</th><th>公司</th></tr>
+            <tr><td>全国</td><td>产品培训生</td><td>腾讯</td></tr>
+            <tr class="orange"><td>全国</td><td>前端开发工程师</td><td>阿里巴巴</td></tr>
+            <tr><td>上海</td><td>交互设计师</td><td>网易游戏</td></tr>
+            <tr class="orange"><td>北京</td><td>视觉设计师</td><td>360</td></tr>
+            <tr><td>深圳</td><td>数据分析师</td><td>IBM</td></tr>
+            <tr class="orange"><td>杭州</td><td>数据研发工程师</td><td>微软</td></tr>
+        </table>
+    </body>
+</html>
